@@ -1,4 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif;
+  background-color: #f2ebe3;
+}
+
+.card {
+  background-color: rebeccapurple;
+  display: flex;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  inset: 0;
+  border-radius: 10px;
+}
+.card .image {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card .image img {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.card .text {
+  display: block;
+  width: 80%;
+  padding: 30px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }/*# sourceMappingURL=mainStyle.css.map */
