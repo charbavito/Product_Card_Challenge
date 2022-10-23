@@ -25,8 +25,9 @@ This is my proposal of solution to the Product Card Challenge on Frontend Mentor
 
 ### Links
 
-- [Live Solution at Versel](#)
-- [Solution on Frontend Mentor](#)
+- [Live Solution at Versel](https://product-card-challenge-tau.vercel.app/)
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-product-card-sass-css3-and-html5-BrHyGpZlta)
+- [Code on Github](https://github.com/charbavito/Product_Card_Challenge#)
 
 
 ## My process
