@@ -26,9 +26,12 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.card .image img {
+.card .image .desktopImage {
   width: 100%;
   border-radius: 10px 0 0 10px;
+}
+.card .image .mobileImage {
+  display: none;
 }
 .card .text {
   display: block;
@@ -89,16 +92,59 @@ body {
 .card .text button:hover {
   background-color: #184131;
   cursor: pointer;
+  transition: all 400ms;
 }
 .card .text button:before {
   content: url(../images/icon-cart.svg);
   margin-right: 10px;
 }
 
+@media (max-width: 540px) {
+  .card {
+    flex-direction: column;
+    width: 300px;
+    height: 535px;
+  }
+  .card .image {
+    background-color: rebeccapurple;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px 10px 0 0;
+  }
+  .card .image .desktopImage {
+    display: none;
+  }
+  .card .image .mobileImage {
+    display: flex;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .card .text {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20px;
+  }
+  .card .text h2, .card .text h1, .card .text p {
+    margin-bottom: 15px;
+  }
+  .card .text .price {
+    margin-bottom: 15px;
+    font-size: 0.85em;
+  }
+}
 footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+footer a {
+  color: #184131;
+  text-decoration: none;
 }/*# sourceMappingURL=mainStyle.css.map */

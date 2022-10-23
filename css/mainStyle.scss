@@ -26,9 +26,12 @@ body{
         display: flex;
         width: fit-content;
 
-        img{
+        .desktopImage{
             width: 100%;
             border-radius: 10px 0 0 10px;
+        }
+        .mobileImage{
+            display: none;
         }
     }
 
@@ -44,7 +47,7 @@ body{
             }
             text-transform: uppercase;
             letter-spacing: 3px;
-            margin-bottom: $marginBaseText;
+            margin-bottom: $marginBaseTextDesktop;
         }
         h1{
             font: {
@@ -54,7 +57,7 @@ body{
             }
             line-height: 1em;
             color: $veryDarkBlue;
-            margin-bottom: $marginBaseText;
+            margin-bottom: $marginBaseTextDesktop;
         }
         p{
             font: {
@@ -62,14 +65,13 @@ body{
                 weight: 500;
             }
             line-height: 1.5em;
-            margin-bottom: $marginBaseText;
+            margin-bottom: $marginBaseTextDesktop;
         }
         .price{
-            margin-bottom: $marginBaseText;
+            margin-bottom: $marginBaseTextDesktop;
             display: flex;
             align-items: center;
-            // justify-content: space-between;
-            
+
             .newPrice{
                 font: {
                     family: 'Fraunces', serif;
@@ -104,6 +106,7 @@ body{
             &:hover{
                 background-color: $darkGreen;
                 cursor: pointer;
+                transition: all 400ms;
             }
 
             &:before{
@@ -114,10 +117,54 @@ body{
     }
 }
 
+@media (max-width: 540px){
+    .card{
+        flex-direction: column;
+        width: 300px;
+        height: 535px;
+
+        .image{
+            background-color: rebeccapurple;
+            display: flex;
+            width: fit-content;
+            border-radius: 10px 10px 0 0;
+
+            .desktopImage{
+                display: none;
+            }
+            .mobileImage{
+                display: flex;
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        .text{
+            width: fit-content;
+            padding: 20px;
+            h2, h1, p{
+                margin-bottom: $marginBaseTextMobile;
+            }
+            .price{
+                margin-bottom: $marginBaseTextMobile;
+                font-size: 0.85em;
+            }
+        }
+    }
+}
+
+
 footer{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
+    font-size: 14px;
+    padding: 10px ;
+
+    a{
+        color: $darkGreen;
+        text-decoration: none;
+    }
 }
