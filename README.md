@@ -21,7 +21,7 @@ This is my proposal of solution to the Product Card Challenge on Frontend Mentor
 
 ### Screenshot
 
-![](./images/ProductCardChallengeScreenshot.png)
+![](./images/ProductCardChallengeScreenshotFixed.png)
 
 ### Links
 
