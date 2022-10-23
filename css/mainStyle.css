@@ -2,19 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: "Fraunces", serif;
-  font-family: "Montserrat", sans-serif;
   background-color: #f2ebe3;
+  color: #6c7289;
 }
 
 .card {
-  background-color: rebeccapurple;
+  background-color: #fff;
   display: flex;
   position: absolute;
-  width: 500px;
+  width: 540px;
   height: 400px;
   margin: auto;
   inset: 0;
@@ -32,8 +32,67 @@ body {
 }
 .card .text {
   display: block;
-  width: 80%;
+  width: 90%;
   padding: 30px;
+}
+.card .text h2 {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.card .text h1 {
+  font-family: "Fraunces", serif;
+  font-size: 1.75em;
+  font-weight: 500;
+  line-height: 1em;
+  color: #1c232b;
+  margin-bottom: 20px;
+}
+.card .text p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+.card .text .price {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.card .text .price .newPrice {
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #3c8067;
+  margin-right: 15px;
+}
+.card .text .price .oldPrice {
+  font-size: 12px;
+  font-weight: 500;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.card .text button {
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  background-color: #3c8067;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  justify-content: center;
+}
+.card .text button:hover {
+  background-color: #184131;
+  cursor: pointer;
+}
+.card .text button:before {
+  content: url(../images/icon-cart.svg);
+  margin-right: 10px;
 }
 
 footer {

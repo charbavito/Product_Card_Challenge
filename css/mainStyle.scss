@@ -4,18 +4,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 body{
-    font-family: 'Fraunces', serif;
-    font-family: 'Montserrat', sans-serif;
     background-color: $cream;
+    color: $darkGrayishBlue;
 }
 
 .card{
-    background-color: rebeccapurple; // temp
+    background-color: $white;
     display: flex;
     position: absolute;
-    width: 500px;
+    width: 540px;
     height: 400px;
     margin: auto;
     inset: 0;
@@ -24,6 +25,7 @@ body{
     .image{
         display: flex;
         width: fit-content;
+
         img{
             width: 100%;
             border-radius: 10px 0 0 10px;
@@ -32,10 +34,86 @@ body{
 
     .text{
         display: block;
-        width: 80%;
+        width: 90%;
         padding: 30px;
+        
+        h2{
+            font: {
+                size: 11px;
+                weight: 500;
+            }
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: $marginBaseText;
+        }
+        h1{
+            font: {
+                family: 'Fraunces', serif;
+                size: 1.75em;
+                weight: 500;
+            }
+            line-height: 1em;
+            color: $veryDarkBlue;
+            margin-bottom: $marginBaseText;
+        }
+        p{
+            font: {
+                size: 13px;
+                weight: 500;
+            }
+            line-height: 1.5em;
+            margin-bottom: $marginBaseText;
+        }
+        .price{
+            margin-bottom: $marginBaseText;
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            
+            .newPrice{
+                font: {
+                    family: 'Fraunces', serif;
+                    size: 2em;
+                    weight: 500;
+                }
+                color: $darkCyan;
+                margin-right: 15px;
+            }
+            .oldPrice{
+                font: {
+                    size: 12px;
+                    weight: 500;
+                }
+                text-decoration-line: line-through;
+            }
+        }
+        button{
+            font: {
+                size: 12px;
+                weight: 700;
+            }
+            display: flex;
+            width: 100%;
+            background-color: $darkCyan;
+            color: $white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            justify-content: center;
+
+            &:hover{
+                background-color: $darkGreen;
+                cursor: pointer;
+            }
+
+            &:before{
+                content: url(../images/icon-cart.svg);
+                margin-right: 10px;
+            }
+        }
     }
 }
+
 footer{
     position: absolute;
     bottom: 0;
